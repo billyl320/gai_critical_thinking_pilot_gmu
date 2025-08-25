@@ -1,0 +1,184 @@
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> ###########################
+> ##### ANOVA on CDS 101
+> ###########################
+> 
+> ##### Limit ourselves to 1-way ANOVA
+> 
+> ##### Initial next step:
+> 
+> # i. Write code to then load the 2 csv files into R
+> treatment <- read.csv("treatment.csv")
+> control <- read.csv("control.csv")
+> 
+> # ii. Have the loaded 2 data objects combined into 1 file
+> 
+> cols_keep <- c(
++   "Student", "Generative.AI.assignment", "Final.Project",
++   "Final.Grade"
++ )
+> 
+> write.csv(
++   rbind(
++     transform(treatment[, cols_keep], Group = "Treatment"),
++     transform(control[, cols_keep], Group = "Control")
++   ),
++   "combined_data.csv",
++   row.names = FALSE
++ )
+> combined <- read.csv("combined_data.csv")
+> rows_rmv <- c(1, 2, 9, 10)
+> combined <- combined[-rows_rmv, ]
+> combined$Final.Project <- as.numeric(combined$Final.Project)
+> missing_rmv <- c(9, 10)
+> combined <- combined[-missing_rmv, ]
+> 
+> # iii. Have it perform the anova analysis including
+> 
+> ### Null hypothesis and Alternative hypothesis
+> cat("Null Hypothesis (H0): The mean GAI HW grade is the same for all groups.")
+Null Hypothesis (H0): The mean GAI HW grade is the same for all groups.> cat("Alternative Hypothesis (H1): A least one group mean is different.")
+Alternative Hypothesis (H1): A least one group mean is different.> 
+> # set significance level
+> alpha <- 0.05
+> 
+> 
+> ## 1. boxplots
+> png("plots/boxplot_gai_hw.png", width = 1024, height = 768)
+> 
+> boxplot(Generative.AI.assignment ~ Group,
++   data = combined,
++   main = "GAI HW by Treatment vs. Control",
++   xlab = "Group", ylab = "GAI HW"
++ )
+> 
+> dev.off()
+null device 
+          1 
+> 
+> png("plots/boxplot_final.png", width = 1024, height = 768)
+> 
+> boxplot(Final.Project ~ Group,
++   data = combined,
++   main = "Final Project by Treatment vs. Control",
++   xlab = "Group", ylab = "Final Project"
++ )
+> 
+> dev.off()
+null device 
+          1 
+> 
+> 
+> ## 2. ANOVA table
+> fit <- aov(Generative.AI.assignment ~ Group, data = combined)
+> summary(fit)
+            Df Sum Sq  Mean Sq F value Pr(>F)
+Group        1 0.0096 0.009600   1.636  0.248
+Residuals    6 0.0352 0.005867               
+> 
+> ## 3. Assumption checks
+> # A1: Completely randomized designed?
+> # A2: Is error normally distributed? (check through QQ-Plot)
+> # A3: Are errors independent from one another? (shape of the errors)
+> # A4: Are variances equal?
+> 
+> # Assumption 1
+> # A1: Assume that it is completely randomized design.
+> 
+> # Assumption 2
+> png("plots/qqplot.png", width = 1024, height = 768, res = 200)
+> plot(fit, 2)
+> dev.off()
+null device 
+          1 
+> 
+> # Assumption 3 & 4
+> png("plots/residuals_fitted_plot.png", width = 1024, height = 768, res = 200)
+> plot(fit, 1)
+> dev.off()
+null device 
+          1 
+> 
+> 
+> ## 4. Have the code print out an interpretation if statistically significant
+> ## or another statement if not statistically significant
+> anova_result <- summary(fit)
+> p_value <- anova_result[[1]]["Group", "Pr(>F)"]
+> 
+> if (p_value < alpha) {
++   cat("The treatment is statistically significant (p =", p_value, ") at alpha level", alpha, ".\n")
++ } else {
++   cat("The treatment is not statistically significant (p =", p_value, ") at alpha level", alpha, ".\n")
++ }
+The treatment is not statistically significant (p = 0.2480664 ) at alpha level 0.05 .
+> 
+> 
+> # LaTex version
+> if (p_value < alpha) {
++   cat("The treatment is statistically significant ($p =", p_value, "$) at $\\alpha =", alpha, "$.\n")
++ } else {
++   cat("The treatment is not statistically significant ($p =", p_value, "$) at $\\alpha=", alpha, "$.\n")
++ }
+The treatment is not statistically significant ($p = 0.2480664 $) at $\alpha= 0.05 $.
+> 
+> 
+> 
+> 
+> ##### Nonparametric version of ANOVA
+> 
+> # H0: All 2 continuous population distributions are the same
+> # H1: At least 1 differs
+> 
+> fit <- kruskal.test(Generative.AI.assignment ~ Group, data = combined)
+> fit
+
+	Kruskal-Wallis rank sum test
+
+data:  Generative.AI.assignment by Group
+Kruskal-Wallis chi-squared = 1.7992, df = 1, p-value = 0.1798
+
+> 
+> 
+> ### print out the p-value and if it is statistically significant or not.
+> 
+> p_value_kw <- fit$p.value
+> 
+> if (p_value_kw < alpha) {
++   cat("The treatment is statistically significant (p =", p_value_kw, ") at alpha level", alpha, ".\n")
++ } else {
++   cat("The treatment is not statistically significant (p =", p_value_kw, ") at alpha level", alpha, ".\n")
++ }
+The treatment is not statistically significant (p = 0.1798096 ) at alpha level 0.05 .
+> 
+> 
+> # LaTex version
+> if (p_value_kw < alpha) {
++   cat("The treatment is statistically significant ($p =", p_value_kw, "$) at $\\alpha =", alpha, "$.\n")
++ } else {
++   cat("The treatment is not statistically significant ($p =", p_value_kw, "$) at $\\alpha=", alpha, "$.\n")
++ }
+The treatment is not statistically significant ($p = 0.1798096 $) at $\alpha= 0.05 $.
+> 
+> proc.time()
+   user  system elapsed 
+  0.102   0.025   0.133 

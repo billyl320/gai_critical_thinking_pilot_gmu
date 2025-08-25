@@ -1,0 +1,88 @@
+﻿Student,Section,FERPA waiver (1135544),Permission to Take Part in a Human Research Study (1176436),Assignment 1 (1135526),Assignment 2 (1135530),Assignment 3 (1135531),Generative AI assignment,Assignment 4 (1135532),Assignment 5 (1135533),Assignment 6 (1135534),Assignment 7 (1135535),Assignment 8 (1135536),Assignment 9 (1135537),Assignment 10 (1135527),Assignment 11 (1135528),Extra Credit Bonus Exercise (1135543),Assignment 12 (1135529),Final Project,Data Visualization quiz (1135539),Data Wrangling quiz (1135540),Exploratory Data Analysis quiz (1135542),Computation quiz (1135538),Modeling quiz (1135547),Inference quiz (1135546),Advanced inference quiz (1135525),Advanced Modeling quiz (1135524),Prediction quiz (1135548),Deep Learning quiz (1135541),FERPA waiver Current Points,FERPA waiver Final Points,FERPA waiver Current Score,FERPA waiver Unposted Current Score,FERPA waiver Final Score,FERPA waiver Unposted Final Score,Study Permission Current Points,Study Permission Final Points,Study Permission Current Score,Study Permission Unposted Current Score,Study Permission Final Score,Study Permission Unposted Final Score,Assignment Current Points,Assignment Final Points,Assignment Current Score,Assignment Unposted Current Score,Assignment Final Score,Assignment Unposted Final Score,Test Current Points,Test Final Points,Test Current Score,Test Unposted Current Score,Test Final Score,Test Unposted Final Score,Current Points,Final Points,Current Score,Unposted Current Score,Final Score,Unposted Final Score,Current Grade,Unposted Current Grade,Final Grade,Unposted Final Grade,,,Total minus late penalty,Total before late penalty',Full comment (copy to BB),On time,Late by < 1 day,Late by < 2 days,Late by >2 days ,General comment,Q1 accuracy,Q1 accuracy comment,Q1 clarity,Q1 clarity comment,Q2 accuracy,Q2 accuracy comment,Q2 clarity,Q2 clarity comment,Q3 accuracy,Q3 accuracy comment,Q3 clarity,Q3 clarity comment,Q4 accuracy,Q4 accuracy comment,Q4 clarity,Q4 clarity comment
+,,,,,,,,,,,,,,,,,,Manual Posting,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Points Possible,1,1,3,3,3,1,3,4,4,4,6,6,6,6,0,6,35,1,1,1,1,1,1,1,1,1,1,(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),(read only),,,,,,,,,,,,,,,,,,,,,,,,,,
+101_a01_01,Summer 2025 Introduction to Computational and Data Sciences (CDS-101-A01),1,1,2.66,2.33,2.68,0.79,1.69,2.91,3.25,3.68,3.43,5.2,4.5,3.89,,5.28,34.4,1,1,1,1,1,1,1,1,1,1,1,1,100,100,100,100,1,1,100,100,100,100,76.69,76.69,85.21,85.21,85.21,85.21,10,10,100,100,100,100,88.69,88.69,86.95,86.95,86.95,86.95,B,B,B,B,,,0.79,0.93,"Great work
+15% Late Penalty
+**Grading feedback:**
+QUESTIONS
+- Q1 accuracy: 100.0 of 100
+- Q1 clarity: 100.0 of 100
+- Q2 accuracy: 50.0 of 100
+This is not the correct function. geom_point() is the correct function
+- Q2 clarity: 100.0 of 100
+- Q3 accuracy: 100.0 of 100
+- Q3 clarity: 100.0 of 100
+- Q4 accuracy: 90.0 of 100
+Did not mention the student needs to use AI according to policy.
+- Q4 clarity: 100.0 of 100",,Yes,,,Great work,100,,100,,50,This is not the correct function. geom_point() is the correct function,100,,100,,100,,90,Did not mention the student needs to use AI according to policy.,100,
+101_a01_02,Summer 2025 Introduction to Computational and Data Sciences (CDS-101-A01),1,1,2.87,3,3,1,3,4,3.89,4,6,6,6,6,1,5.95,35,1,1,1,1,1,1,1,1,0.75,1,1,1,100,100,100,100,1,1,100,100,100,100,90.71,90.71,100.79,100.79,100.79,100.79,9.75,9.75,97.5,97.5,97.5,97.5,102.46,102.46,100.45,100.45,100.45,100.45,A+,A+,A+,A+,,,1,1,"Superb assignment!
+**Grading feedback:**
+QUESTIONS
+- Q1 accuracy: 100.0 of 100
+- Q1 clarity: 100.0 of 100
+- Q2 accuracy: 100.0 of 100
+- Q2 clarity: 100.0 of 100
+- Q3 accuracy: 100.0 of 100
+- Q3 clarity: 100.0 of 100
+- Q4 accuracy: 100.0 of 100
+Excellent answer.
+- Q4 clarity: 100.0 of 100",Yes,,,,Superb assignment!,100,,100,,100,,100,,100,,100,,100,Excellent answer.,100,
+101_a01_03,Summer 2025 Introduction to Computational and Data Sciences (CDS-101-A01),1,1,3,3,2.94,0.88,3,4,3.94,4,5.1,4.15,5.83,6,,5.95,35,1,1,1,1,1,1,1,1,0.75,1,1,1,100,100,100,100,1,1,100,100,100,100,86.79,86.79,96.43,96.43,96.43,96.43,9.75,9.75,97.5,97.5,97.5,97.5,98.54,98.54,96.61,96.61,96.61,96.61,A,A,A,A,,,0.88,0.88,"Good work. Make sure to go into detail on your answers.
+**Grading feedback:**
+QUESTIONS
+- Q1 accuracy: 70.0 of 100
+Correct answer, but you have no details.
+- Q1 clarity: 100.0 of 100
+- Q2 accuracy: 70.0 of 100
+Did not mention that this is an innapropriate use of GAI in CDS101. 
+- Q2 clarity: 100.0 of 100
+- Q3 accuracy: 90.0 of 100
+Provided no explanation of the implications of using this code in the assignment, or AI written code in general.
+- Q3 clarity: 100.0 of 100
+- Q4 accuracy: 70.0 of 100
+Needed a lot more detail here. Missing detail on if this is appropriate to use in class, in particular.
+- Q4 clarity: 100.0 of 100",Yes,,,,Good work. Make sure to go into detail on your answers.,70,"Correct answer, but you have no details.",100,,70,Did not mention that this is an innapropriate use of GAI in CDS101. ,100,,90,"Provided no explanation of the implications of using this code in the assignment, or AI written code in general.",100,,70,"Needed a lot more detail here. Missing detail on if this is appropriate to use in class, in particular.",100,
+101_a01_04,Summer 2025 Introduction to Computational and Data Sciences (CDS-101-A01),1,1,3,2.92,2.7,0.9,2.86,3.96,3.92,3.97,5.94,5.85,5.96,6,1,5.76,34.7,1,1,1,1,1,1,1,1,1,0.5,1,1,100,100,100,100,1,1,100,100,100,100,89.44,89.44,99.38,99.38,99.38,99.38,9.5,9.5,95,95,95,95,100.94,100.94,98.96,98.96,98.96,98.96,A+,A+,A+,A+,,,0.9,0.9,"Great work
+**Grading feedback:**
+QUESTIONS
+- Q1 accuracy: 70.0 of 100
+Missing a lot of detail in your answer. How is the code calculating probability? 
+- Q1 clarity: 100.0 of 100
+- Q2 accuracy: 90.0 of 100
+Missing statement to the fact that copying this into your assignment is an innapropriate useage of Generative AI in CDS 101.
+- Q2 clarity: 100.0 of 100
+- Q3 accuracy: 90.0 of 100
+Missing some detail,  and discussion of the implications of using AI in coding. 
+- Q3 clarity: 100.0 of 100
+- Q4 accuracy: 70.0 of 100
+This answer from AI is actually accurate. YOu are missing a state ment to the fact thata student must take care to use AI in accordance with policy.
+- Q4 clarity: 100.0 of 100",Yes,,,,Great work,70,Missing a lot of detail in your answer. How is the code calculating probability? ,100,,90,Missing statement to the fact that copying this into your assignment is an innapropriate useage of Generative AI in CDS 101.,100,,90,"Missing some detail,  and discussion of the implications of using AI in coding. ",100,,70,This answer from AI is actually accurate. YOu are missing a state ment to the fact thata student must take care to use AI in accordance with policy.,100,
+101_a01_05,Summer 2025 Introduction to Computational and Data Sciences (CDS-101-A01),1,1,2.87,3,2.99,1,3,4,3.97,3.97,5.91,6,6,5.94,1,6,35,1,1,1,1,1,1,1,1,1,1,1,1,100,100,100,100,1,1,100,100,100,100,90.65,90.65,100.72,100.72,100.72,100.72,10,10,100,100,100,100,102.65,102.65,100.64,100.64,100.64,100.64,A+,A+,A+,A+,,,0.98,0.98,"Great work
+**Grading feedback:**
+QUESTIONS
+- Q1 accuracy: 100.0 of 100
+- Q1 clarity: 100.0 of 100
+- Q2 accuracy: 100.0 of 100
+Excellent answer.
+- Q2 clarity: 100.0 of 100
+- Q3 accuracy: 90.0 of 100
+Did not provide any answer regarding this being an innapropriate use of AI
+- Q3 clarity: 100.0 of 100
+- Q4 accuracy: 90.0 of 100
+Additionally, needed to state that if you used this in class, you should save the 'conversation' link and paste it in your citations.
+- Q4 clarity: 100.0 of 100",Yes,,,,Great work,100,,100,,100,Excellent answer.,100,,90,Did not provide any answer regarding this being an innapropriate use of AI,100,,90,"Additionally, needed to state that if you used this in class, you should save the 'conversation' link and paste it in your citations.",100,
+101_a01_06,Summer 2025 Introduction to Computational and Data Sciences (CDS-101-A01),1,1,1.65,2.96,2.99,0.98,2.9,3.96,3.92,3.97,5.89,6,6,6,1,6,35,1,1,1,1,1,1,1,0.75,1,0.5,1,1,100,100,100,100,1,1,100,100,100,100,89.22,89.22,99.13,99.13,99.13,99.13,9.25,9.25,92.5,92.5,92.5,92.5,100.47,100.47,98.5,98.5,98.5,98.5,A+,A+,A+,A+,,,0.84,0.84,"**Grading feedback:**
+QUESTIONS
+- Q1 accuracy: 70.0 of 100
+MIssing all detail in your answer.
+- Q1 clarity: 100.0 of 100
+- Q2 accuracy: 70.0 of 100
+Missing the fact that geom_point() is the correct function, additionally no statement regarding that this is an innapropriate use of AI.
+- Q2 clarity: 100.0 of 100
+- Q3 accuracy: 90.0 of 100
+Does not fully explain why it is incorrect to add an extra column. Additionally, does not explain the implications of using AI generated code.
+- Q3 clarity: 90.0 of 100
+Can't read some of the answer due to handwriting.
+- Q4 accuracy: 50.0 of 100
+This answer from AI is actually accurate. YOu are missing a state ment to the fact thata student must take care to use AI in accordance with policy.
+- Q4 clarity: 100.0 of 100",Yes,,,,,70,MIssing all detail in your answer.,100,,70,"Missing the fact that geom_point() is the correct function, additionally no statement regarding that this is an innapropriate use of AI.",100,,90,"Does not fully explain why it is incorrect to add an extra column. Additionally, does not explain the implications of using AI generated code.",90,Can't read some of the answer due to handwriting.,50,This answer from AI is actually accurate. YOu are missing a state ment to the fact thata student must take care to use AI in accordance with policy.,100,
